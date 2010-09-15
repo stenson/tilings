@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tilings.css">
+    <script src="jquery.js"></script>
+    <script src="hotkeys.js"></script>
+    <script src="wordnik.js"></script>
+    <script>
+      // boot the 'Nik
+      Nik.bootWith({
+         api_key: "d4d9cdf6762d015b2900b0f2a1d000e494c784b33503477ea"
+      });
+      // now do something
+      $(function(){
+         $("form#search").submit(function(){
+            var value = $("input#text").attr("value");
+            Nik.Word.examples(value,function(data){
+               $("p#output").empty();
+               for(var d in data) {
+                  $("p#output").append("<h1>"+data[d].display+"</h1>");
+               }
+            });
+            return false;
+         });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container" class="clearfix">
+      <form id="search">
+       <input id="text" type="text"/>
+      </form>
+      <p id="output">Output appears here</p>
+    </div>
+  </body>
+</html>
