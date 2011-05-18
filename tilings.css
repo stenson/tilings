@@ -1,5 +1,6 @@
 body {
    font-family:Georgia,serif;
+   background:papayawhip;
 }
 div#container {
    margin:auto auto;
@@ -9,13 +10,16 @@ div#container {
 div#text {
    padding:25px;
    margin:15px;
-   /*-webkit-box-shadow:0px 1px 5px rgba(0,0,0,0.2);*/
+/*   -webkit-box-shadow:0px 1px 5px rgba(0,0,0,0.2);*/
+   width:500px;
 }
 .tile {
-   display:block; padding:2px 1px 1px 0px; float:left; margin-bottom:1px;
+   display:block;
+   padding:2px 1px 1px 0px;
+   float:left;
+   margin-bottom:1px;
    font-family:Georgia,"Helvetica Neue",Arial,Helvetica,sans-serif;
-   font-size:17px; color:#333; /*background:#ddd;*/
-   /*-webkit-font-smoothing:antialiased;*/
+   font-size:17px; color:#333;
    overflow:visible;
    position:relative;
 }
@@ -26,17 +30,19 @@ div#text {
 .tile.tab {
    width:45px;
    height:15px;
-   background:whitesmoke;
+   background:yellow;
 }
 .word {
    display:block; padding:5px 3px 2px 3px;
    cursor:pointer; margin-bottom:8px;
    border-bottom:1px solid #eee;
    text-shadow:0px 0px 2px rgba(75,75,75,0.2);
-   /*background:#eee;*/
+   background:white;
 }
 .tile.focus .word {
    background:mintcream;
+   background:royalblue;
+   color:white;
    border-color:white;
    -webkit-box-shadow:0px 1px 3px rgba(0,0,0,0.2);
 }
@@ -58,13 +64,15 @@ div#text {
 }
 
 input.buffer {
-   position:absolute; top:0px; left:0px;
-   font-size:300px; font-weight:bold; width:400px;
-   height:500px;
+   position:fixed; bottom:0px; right:0px;
+   font-size:100px; font-weight:bold; width: 200px;
+   height: 300px;
    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-   color:honeydew; border:none;
+   color:honeydew;
    color:white;
-}
+   border:none;
+/*   color:white;*/
+; background: transparent;}
 input.buffer:focus {
    outline:none;
 }
@@ -103,6 +111,7 @@ div.history {
    -webkit-box-shadow:0px 1px 5px rgba(0,0,0,0.3);
    z-index:100000000;
    width:200px;
+   display:none;
 }
 ul.history-list {
    margin:5px; padding:5px;
