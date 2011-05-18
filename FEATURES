@@ -19,3 +19,11 @@ user-defined rules (gui on top of regular expressions)
 
 user-defined stylesheets (like keep a big library of them)
 so you can publish your texts
+
+letters are fragile / words are stocky
+
+can just compress html of page for history
+<div><span>l</span><div id='cursor'></div><span>e</span></div>
+goes to
+escapes would be \$,\[,\],\{,\},\; 
+this|l[[c]]etter|\n{h:35}|can|be|awesome
