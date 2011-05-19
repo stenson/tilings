@@ -63,7 +63,7 @@ div#text {
    background:lightblue;
 }
 
-input.buffer {
+input#buffer {
    position:fixed; bottom:0px; right:0px;
    font-size:100px; font-weight:bold; width: 200px;
    height: 300px;
@@ -73,7 +73,7 @@ input.buffer {
    border:none;
 /*   color:white;*/
 ; background: transparent;}
-input.buffer:focus {
+input#buffer:focus {
    outline:none;
 }
 
