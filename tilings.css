@@ -25,7 +25,8 @@ div#text {
 }
 .tile.carriage {
    width:100%;
-   height:25px;
+   height:45px;
+   background:mintcream;
 }
 .tile.tab {
    width:45px;
